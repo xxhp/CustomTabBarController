@@ -1,2 +1,2 @@
 inspired by https://github.com/MPiccinato/SlidingTabs;
-display a custom tabbar at bottom of viewcontroller to mimic the functions of tabbarcontroller;
+display a custom tabbar at bottom of viewcontroller to mimic the functions of tabbarcontroller;![Screen Shot 2012 03 31 At 下午11.56.29](Screen Shot 2012-03-31 at 下午11.56.29.png)
