@@ -26,8 +26,8 @@
     // Drawing code
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSetLineWidth(context, 2.0);
-    CGContextSetStrokeColorWithColor(context, [UIColor colorWithRed:108.0/255.0f green:108.0/255.0f blue:108.0/255.0f alpha:1.0].CGColor);
-    CGContextSetFillColorWithColor(context, [UIColor colorWithRed:108.0/255.0f green:108.0/255.0f blue:108.0/255.0f alpha:1.0].CGColor);
+    CGContextSetStrokeColorWithColor(context, [UIColor colorWithRed:84.0/255.0f green:18.0/255.0f blue:108.0/255.0f alpha:.8].CGColor);
+    CGContextSetFillColorWithColor(context, [UIColor colorWithRed:84.0/255.0f green:18.0/255.0f blue:108.0/255.0f alpha:.8].CGColor);
     CGContextSetShadow(context, CGSizeMake (0, 2), 5.0);
     
     CGContextSaveGState(context);

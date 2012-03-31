@@ -11,4 +11,5 @@
 
 @interface ViewController : UIViewController<SlidingTabsControlDelegate>
 
+@property (retain, nonatomic) IBOutlet UIView *backView;
 @end

@@ -30,7 +30,7 @@
         _delegate = slidingTabsControlDelegate;
         
         // Set our frame
-        self.frame = CGRectMake(0, 460 - 44, 320, 44);
+        self.frame = CGRectMake(0, 460 - 40, 320, 40);
         self.backgroundColor = [UIColor blackColor];
         
         // Initalize the array we use to store our buttons
@@ -38,11 +38,11 @@
         
         // horizontalOffset tracks the proper x value as we add buttons as subviews
         CGFloat horizontalOffset = 0;
-        CGFloat buttonWidth = (320.0 / tabCount);
+        CGFloat buttonWidth = (280.0 / tabCount);
         CGFloat buttonHeight = 44;
         
         // Draw our tab!
-        _tab = [[SlidingTabsTab alloc] initWithFrame:CGRectMake(-5, 0, buttonWidth+10.0, buttonHeight)];
+        _tab = [[SlidingTabsTab alloc] initWithFrame:CGRectMake(5, -4, buttonWidth+10.0, buttonHeight)];
         [self addSubview:_tab];
         
         // Iterate through each segment
@@ -105,8 +105,8 @@
     CGColorSpaceRef rgbColorspace;
     size_t num_locations = 2;
     CGFloat locations[2] = { 0.0, 1.0 };
-    CGFloat components[8] = { 80.0/255.0f, 80.0/255.0f, 80.0/255.0f, 1.0,  // Start color
-                              40.0/255.0f, 40.0/255.0f, 40.0/255.0f, 1.0 }; // End color
+    CGFloat components[8] = { 20.0/255.0f, 80.0/255.0f,20.0/255.0f, 1.0,  // Start color
+                              20.0/255.0f, 20.0/255.0f, 20.0/255.0f, 1.0 }; // End color
     
     rgbColorspace = CGColorSpaceCreateDeviceRGB();
     glossGradient = CGGradientCreateWithColorComponents(rgbColorspace, components, locations, num_locations);
@@ -121,11 +121,11 @@
     
     // Draw Button dividers
     for (int i = 0; i < [_buttons count]; i++) {
-        CGFloat buttonWidth = (320.0 / [_buttons count]);
+        CGFloat buttonWidth = (280.0 / [_buttons count]);
         
         CGContextRef context = UIGraphicsGetCurrentContext();
         CGContextSetLineWidth(context, 1.0);
-        CGContextSetStrokeColorWithColor(context, [UIColor darkGrayColor].CGColor);;
+        CGContextSetStrokeColorWithColor(context, [UIColor blueColor].CGColor);;
         CGContextSetShadow(context, CGSizeMake (0, 0), 0.0);
         
         CGContextSaveGState(context);
@@ -164,13 +164,13 @@
 {
     // Determine where tab should go
     CGFloat segmentCount = [_buttons count];
-    CGFloat buttonWidth = (320.0 / segmentCount);
+    CGFloat buttonWidth = (290.0 / segmentCount);
     CGFloat buttonIndex = [_buttons indexOfObject:button];
     CGFloat newPosition = (buttonWidth * buttonIndex) - 5.0;
     
    // [UIView beginAnimations:nil context:nil];
    // [UIView setAnimationDuration:0.1];
-    [_tab setFrame:CGRectMake(newPosition, 0, _tab.frame.size.width, _tab.frame.size.height)];
+    [_tab setFrame:CGRectMake(newPosition+10, -4, _tab.frame.size.width, _tab.frame.size.height)];
   //  [UIView commitAnimations];
     
     if ([_delegate respondsToSelector:@selector(touchUpInsideTabIndex:)])

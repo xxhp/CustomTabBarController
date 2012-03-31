@@ -17,6 +17,7 @@
 		F37C89E7152759AE00B2D545 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F37C89E5152759AE00B2D545 /* ViewController.xib */; };
 		F37C89F3152759E800B2D545 /* SlidingTabsTab.m in Sources */ = {isa = PBXBuildFile; fileRef = F37C89F2152759E800B2D545 /* SlidingTabsTab.m */; };
 		F37C89F6152759F600B2D545 /* SlidingTabsControl.m in Sources */ = {isa = PBXBuildFile; fileRef = F37C89F5152759F600B2D545 /* SlidingTabsControl.m */; };
+		F37C8A0B15276AA500B2D545 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F37C8A0A15276AA500B2D545 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		F37C89F2152759E800B2D545 /* SlidingTabsTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlidingTabsTab.m; sourceTree = "<group>"; };
 		F37C89F4152759F100B2D545 /* SlidingTabsControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlidingTabsControl.h; sourceTree = "<group>"; };
 		F37C89F5152759F600B2D545 /* SlidingTabsControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlidingTabsControl.m; sourceTree = "<group>"; };
+		F37C8A0A15276AA500B2D545 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F37C8A0B15276AA500B2D545 /* QuartzCore.framework in Frameworks */,
 				F37C89D1152759AE00B2D545 /* UIKit.framework in Frameworks */,
 				F37C89D3152759AE00B2D545 /* Foundation.framework in Frameworks */,
 				F37C89D5152759AE00B2D545 /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +76,7 @@
 		F37C89CF152759AE00B2D545 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F37C8A0A15276AA500B2D545 /* QuartzCore.framework */,
 				F37C89D0152759AE00B2D545 /* UIKit.framework */,
 				F37C89D2152759AE00B2D545 /* Foundation.framework */,
 				F37C89D4152759AE00B2D545 /* CoreGraphics.framework */,
